@@ -1,0 +1,924 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VeloClient — modern client operations platform">
+  <title>VeloClient — Client Operations</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="noise"></div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <a href="#home" class="brand">
+    <span class="brand-logo">V</span>
+    <span>VeloClient</span>
+  </a>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#workflow">How it works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#support">Support</a>
+  </nav>
+
+  <div class="nav-buttons">
+    <button class="btn ghost" data-login>Log in</button>
+    <button class="btn primary" data-login>
+      Get started <span>↗</span>
+    </button>
+  </div>
+</header>
+
+
+<!-- HERO -->
+<main id="home">
+
+<section class="hero">
+
+  <div class="hero-text">
+
+    <div class="eyebrow">
+      <span class="pulse"></span>
+      Client operations, rebuilt for speed
+    </div>
+
+    <h1>
+      Onboard clients
+      <br>
+      <span>in minutes.</span>
+      <br>
+      Not hours.
+    </h1>
+
+    <p>
+      VeloClient brings onboarding, projects, approvals,
+      invoices and client communication into one clean workspace.
+    </p>
+
+    <div class="hero-buttons">
+      <button class="btn primary large" data-login>
+        Start free →
+      </button>
+
+      <a href="#features" class="btn dark large">
+        Explore platform ▶
+      </a>
+    </div>
+
+    <div class="trust">
+      <span>✦ Built for modern teams</span>
+      <span>•</span>
+      <span>Secure workspace</span>
+      <span>•</span>
+      <span>Simple pricing</span>
+    </div>
+
+  </div>
+
+
+  <!-- DASHBOARD MOCKUP -->
+
+  <div class="hero-dashboard">
+
+    <div class="glow"></div>
+
+    <div class="browser">
+
+      <div class="browser-bar">
+        <i></i>
+        <i></i>
+        <i></i>
+
+        <div class="browser-url">
+          app.veloclient.com/dashboard
+        </div>
+      </div>
+
+      <div class="dashboard">
+
+        <aside class="sidebar">
+
+          <div class="small-logo">V</div>
+
+          <div class="side active">
+            ▦
+            <span>Overview</span>
+          </div>
+
+          <div class="side">
+            ◫
+            <span>Clients</span>
+          </div>
+
+          <div class="side">
+            ◌
+            <span>Projects</span>
+          </div>
+
+          <div class="side">
+            ▤
+            <span>Payments</span>
+          </div>
+
+          <div class="side">
+            ⚙
+            <span>Settings</span>
+          </div>
+
+          <div class="side-user">
+            <div class="avatar">A</div>
+            Admin
+          </div>
+
+        </aside>
+
+
+        <section class="dashboard-main">
+
+          <div class="dashboard-header">
+
+            <div>
+              <small>Tuesday, September 29</small>
+              <h3>Welcome back, Anik.</h3>
+            </div>
+
+            <button class="new-client">
+              + New client
+            </button>
+
+          </div>
+
+
+          <div class="stats">
+
+            <div class="stat">
+              <small>Active clients</small>
+              <strong>24</strong>
+              <em>↑ 12.5%</em>
+            </div>
+
+            <div class="stat">
+              <small>Projects</small>
+              <strong>18</strong>
+              <em>↑ 8.2%</em>
+            </div>
+
+            <div class="stat">
+              <small>Revenue</small>
+              <strong>$12.8k</strong>
+              <em>↑ 16.4%</em>
+            </div>
+
+          </div>
+
+
+          <div class="dashboard-grid">
+
+            <div class="panel">
+
+              <div class="panel-title">
+                <b>Recent clients</b>
+                <a href="#">View all</a>
+              </div>
+
+              <div class="client">
+                <span class="client-avatar purple">MC</span>
+
+                <div>
+                  <b>Monarch Creative</b>
+                  <small>Website redesign</small>
+                </div>
+
+                <label class="paid">Paid</label>
+              </div>
+
+              <div class="client">
+                <span class="client-avatar green">NB</span>
+
+                <div>
+                  <b>Northbay Studio</b>
+                  <small>Brand system</small>
+                </div>
+
+                <label class="progress">In progress</label>
+              </div>
+
+              <div class="client">
+                <span class="client-avatar orange">AP</span>
+
+                <div>
+                  <b>Apex Properties</b>
+                  <small>Landing page</small>
+                </div>
+
+                <label class="due">Due</label>
+              </div>
+
+            </div>
+
+
+            <div class="panel activity">
+
+              <div class="panel-title">
+                <b>Activity</b>
+                <span>•••</span>
+              </div>
+
+              <div class="activity-item">
+                <i></i>
+                <div>
+                  <b>Payment received</b>
+                  <small>$1,250 · 12 min ago</small>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <i></i>
+                <div>
+                  <b>Client approved</b>
+                  <small>Homepage concept</small>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <i></i>
+                <div>
+                  <b>New client onboarded</b>
+                  <small>2 hours ago</small>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+
+
+    <div class="floating-card first">
+      <span>✓</span>
+      <div>
+        <b>Client approved</b>
+        <small>Project milestone</small>
+      </div>
+    </div>
+
+    <div class="floating-card second">
+      <span>$</span>
+      <div>
+        <b>+$1,250</b>
+        <small>Payment received</small>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- LOGO STRIP -->
+
+<section class="logo-strip">
+
+  <span>Trusted workflow for</span>
+
+  <b>Agencies</b>
+  <b>Freelancers</b>
+  <b>Studios</b>
+  <b>Consultants</b>
+  <b>Service teams</b>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="section" id="features">
+
+  <div class="section-heading">
+
+    <div>
+      <span class="kicker">ONE WORKSPACE</span>
+
+      <h2>
+        Everything your
+        <br>
+        <span>client journey needs.</span>
+      </h2>
+    </div>
+
+    <p>
+      Stop stitching together forms, spreadsheets,
+      payment links and scattered messages.
+      VeloClient gives your team one source of truth.
+    </p>
+
+  </div>
+
+
+  <div class="features">
+
+    <article class="feature large-feature">
+
+      <div class="feature-icon">↗</div>
+
+      <h3>Instant onboarding</h3>
+
+      <p>
+        Send a branded onboarding link, collect project
+        details and turn a lead into an active client
+        without unnecessary back-and-forth.
+      </p>
+
+      <div class="fake-form">
+
+        <span>NEW CLIENT</span>
+
+        <div>
+          Monarch Creative
+          <b>✓</b>
+        </div>
+
+        <div>
+          Website redesign
+          <b>✓</b>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="feature">
+
+      <div class="feature-icon">▣</div>
+
+      <h3>Project control</h3>
+
+      <p>
+        Track milestones, approvals, files and
+        deadlines from one client-facing workspace.
+      </p>
+
+    </article>
+
+
+    <article class="feature">
+
+      <div class="feature-icon">$</div>
+
+      <h3>Payments</h3>
+
+      <p>
+        Keep invoices and payment status beside
+        the project instead of using separate tools.
+      </p>
+
+    </article>
+
+
+    <article class="feature">
+
+      <div class="feature-icon">✦</div>
+
+      <h3>AI assistant</h3>
+
+      <p>
+        Use Gemini to draft updates, summarize
+        requests and create clear next steps.
+      </p>
+
+    </article>
+
+
+    <article class="feature wide-feature">
+
+      <div class="feature-icon">◎</div>
+
+      <div>
+        <h3>Client portal</h3>
+
+        <p>
+          Give every client a polished portal for
+          project progress, approvals, documents
+          and communication.
+        </p>
+      </div>
+
+      <button class="outline" data-login>
+        Preview portal →
+      </button>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- WORKFLOW -->
+
+<section class="section workflow" id="workflow">
+
+  <div class="center-heading">
+
+    <span class="kicker">HOW IT WORKS</span>
+
+    <h2>
+      From first message to
+      <br>
+      <span>paid project.</span>
+    </h2>
+
+  </div>
+
+
+  <div class="steps">
+
+    <div class="step">
+      <b>01</b>
+      <h3>Create</h3>
+      <p>Create a client workspace in seconds.</p>
+    </div>
+
+    <div class="step">
+      <b>02</b>
+      <h3>Onboard</h3>
+      <p>Collect the brief, files and requirements.</p>
+    </div>
+
+    <div class="step">
+      <b>03</b>
+      <h3>Deliver</h3>
+      <p>Manage milestones and approvals.</p>
+    </div>
+
+    <div class="step">
+      <b>04</b>
+      <h3>Get paid</h3>
+      <p>Track invoices and payment status.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PRICING -->
+
+<section class="section pricing" id="pricing">
+
+  <div class="pricing-intro">
+
+    <span class="kicker">SIMPLE PRICING</span>
+
+    <h2>
+      One plan.
+      <br>
+      <span>Everything you need.</span>
+    </h2>
+
+    <p>
+      No confusing feature maze.
+      Start small and upgrade when your operation grows.
+    </p>
+
+    <button class="btn primary large" data-login>
+      Start with VeloClient →
+    </button>
+
+  </div>
+
+
+  <div class="price-card">
+
+    <span class="plan">VELOCLIENT PRO</span>
+
+    <h3>
+      $199
+      <small>/month</small>
+    </h3>
+
+    <p>
+      For teams that want a complete client operation.
+    </p>
+
+    <ul>
+      <li>Unlimited client workspaces</li>
+      <li>Project & milestone tracking</li>
+      <li>Client portal</li>
+      <li>Payment tracking</li>
+      <li>Gemini-powered assistant</li>
+      <li>Priority support</li>
+    </ul>
+
+    <button class="btn dark full" data-login>
+      Choose Pro
+    </button>
+
+  </div>
+
+
+  <div class="enterprise-card">
+
+    <span class="plan">ENTERPRISE</span>
+
+    <h3>Custom</h3>
+
+    <p>
+      Custom workflows, onboarding and support
+      for larger operations.
+    </p>
+
+    <a href="mailto:anikmanna697@gmail.com">
+      Contact support →
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <div>
+
+    <span class="kicker">READY TO MOVE FASTER?</span>
+
+    <h2>
+      Your client workflow,
+      <br>
+      <span>finally in one place.</span>
+    </h2>
+
+  </div>
+
+  <button class="btn light large" data-login>
+    Open VeloClient →
+  </button>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer id="support">
+
+  <div class="footer-main">
+
+    <a class="brand" href="#home">
+      <span class="brand-logo">V</span>
+      VeloClient
+    </a>
+
+    <p>
+      Modern client operations for ambitious teams.
+    </p>
+
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="mailto:anikmanna697@gmail.com">Support</a>
+      <a href="mailto:anikmanna697@gmail.com">Contact</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 VeloClient</span>
+    <span>PayPal: jayita5628@gmail.com</span>
+    <span>Support: anikmanna697@gmail.com</span>
+  </div>
+
+</footer>
+
+
+<!-- LOGIN MODAL -->
+
+<div class="modal hidden" id="loginModal">
+
+  <div class="backdrop" data-close></div>
+
+  <div class="auth-card">
+
+    <button class="close" data-close>×</button>
+
+    <div class="auth-brand">
+      <div class="auth-logo">V</div>
+      <span>VeloClient</span>
+    </div>
+
+    <span class="kicker">WELCOME BACK</span>
+
+    <h2>
+      Sign in to your
+      <br>
+      <span>workspace.</span>
+    </h2>
+
+    <p class="muted">
+      Manage clients, projects and payments from
+      one secure workspace.
+    </p>
+
+
+    <!-- GOOGLE -->
+
+    <button class="social-btn" data-provider="Google">
+      <strong class="google">G</strong>
+      Continue with Google
+    </button>
+
+
+    <div class="social-grid">
+
+      <!-- APPLE -->
+
+      <button class="social-btn" data-provider="Apple">
+        <strong class="apple">●</strong>
+        Apple
+      </button>
+
+
+      <!-- LINKEDIN -->
+
+      <button class="social-btn" data-provider="LinkedIn">
+        <strong class="linkedin">in</strong>
+        LinkedIn
+      </button>
+
+    </div>
+
+
+    <div class="divider">
+      <span>OR CONTINUE WITH EMAIL</span>
+    </div>
+
+
+    <!-- EMAIL LOGIN -->
+
+    <form id="loginForm">
+
+      <label>
+        Email address
+
+        <input
+          type="email"
+          id="email"
+          autocomplete="email"
+          placeholder="you@gmail.com"
+          required
+        >
+
+      </label>
+
+
+      <label>
+        Password
+
+        <div class="password-container">
+
+          <input
+            type="password"
+            id="password"
+            autocomplete="current-password"
+            minlength="10"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{10,}"
+            placeholder="Enter your password"
+            required
+          >
+
+          <button
+            type="button"
+            id="togglePassword"
+            class="show-password"
+          >
+            Show
+          </button>
+
+        </div>
+
+      </label>
+
+
+      <!-- PASSWORD STRENGTH -->
+
+      <div class="password-strength" id="strengthBox">
+
+        <div class="strength-header">
+
+          <span>Password strength</span>
+
+          <b id="strengthLabel">
+            Enter password
+          </b>
+
+        </div>
+
+        <div class="strength-bars">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+
+        <small id="passwordHint">
+          10+ characters · uppercase · lowercase · number · symbol
+        </small>
+
+      </div>
+
+
+      <div class="login-options">
+
+        <label class="remember">
+          <input type="checkbox">
+          Remember me
+        </label>
+
+        <a href="mailto:anikmanna697@gmail.com?subject=VeloClient%20Password%20Reset">
+          Forgot password?
+        </a>
+
+      </div>
+
+
+      <button class="btn primary full signin-btn" type="submit">
+        Sign in →
+      </button>
+
+    </form>
+
+
+    <p class="signup">
+      New to VeloClient?
+      <button id="createAccount">
+        Create an account
+      </button>
+    </p>
+
+    <small class="terms">
+      By continuing, you agree to VeloClient's
+      Terms and Privacy Policy.
+    </small>
+
+  </div>
+
+</div>
+
+
+<!-- CLIENT PORTAL -->
+
+<div class="modal hidden" id="portalModal">
+
+  <div class="portal">
+
+    <header class="portal-header">
+
+      <div class="brand">
+        <span class="brand-logo">V</span>
+        VeloClient
+      </div>
+
+      <button class="close" id="closePortal">×</button>
+
+    </header>
+
+
+    <div class="portal-layout">
+
+      <aside class="portal-sidebar">
+
+        <small>WORKSPACE</small>
+
+        <a class="active">Overview</a>
+        <a>Clients</a>
+        <a>Projects</a>
+        <a>Payments</a>
+        <a>AI Assistant</a>
+
+      </aside>
+
+
+      <section class="portal-content">
+
+        <div class="portal-heading">
+
+          <div>
+            <span class="kicker">DASHBOARD</span>
+            <h2>Welcome back.</h2>
+          </div>
+
+          <span class="live">● Live</span>
+
+        </div>
+
+
+        <div class="portal-stats">
+
+          <div>
+            <small>Clients</small>
+            <strong>24</strong>
+          </div>
+
+          <div>
+            <small>Open projects</small>
+            <strong>18</strong>
+          </div>
+
+          <div>
+            <small>Outstanding</small>
+            <strong>$4,820</strong>
+          </div>
+
+        </div>
+
+
+        <!-- GEMINI -->
+
+        <div class="ai-box">
+
+          <div class="ai-title">
+            <span>✦ Gemini Assistant</span>
+            <small>AI powered</small>
+          </div>
+
+          <p id="aiResponse">
+            Ask Gemini to summarize your client pipeline
+            or draft a professional client update.
+          </p>
+
+          <div class="ai-input">
+
+            <input
+              id="aiPrompt"
+              placeholder="Draft a friendly project update..."
+            >
+
+            <button class="btn primary" id="askAI">
+              Ask AI
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div class="recent-work">
+
+          <div class="recent-header">
+            <b>Recent work</b>
+            <span>Updated just now</span>
+          </div>
+
+          <div class="work-row">
+            <span>Monarch Creative</span>
+            <span>Website redesign</span>
+            <em>Paid</em>
+          </div>
+
+          <div class="work-row">
+            <span>Northbay Studio</span>
+            <span>Brand system</span>
+            <em>In progress</em>
+          </div>
+
+          <div class="work-row">
+            <span>Apex Properties</span>
+            <span>Landing page</span>
+            <em>Due Friday</em>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+  </html>
