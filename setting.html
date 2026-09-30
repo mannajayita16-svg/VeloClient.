@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Settings | VeloClient</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-page">
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+
+    <a href="dashboard.html" class="brand">
+      <span class="brand-mark">V</span>
+      VeloClient
+    </a>
+
+    <nav class="side-nav">
+      <a href="dashboard.html">◉ Dashboard</a>
+      <a href="clients.html">◌ Clients</a>
+      <a href="audit.html">✦ AI Audits</a>
+      <a class="active" href="settings.html">⚙ Settings</a>
+    </nav>
+
+    <div class="side-bottom">
+      <button id="logout" class="logout">Sign out</button>
+    </div>
+
+  </aside>
+
+  <main class="app-main">
+
+    <header class="app-header">
+      <div>
+        <small>OWNER SETTINGS</small>
+        <h1>Settings</h1>
+      </div>
+    </header>
+
+    <section class="settings-card">
+
+      <div class="settings-heading">
+        <span class="eyebrow">INTEGRATIONS</span>
+        <h2>VeloClient configuration</h2>
+        <p>
+          Configure the services used by your application.
+        </p>
+      </div>
+
+      <div class="setting-row">
+        <div>
+          <strong>Gemini API key</strong>
+          <p>
+            Stored only as a Vercel environment variable.
+            It should never be exposed in frontend JavaScript.
+          </p>
+        </div>
+
+        <code>GEMINI_API_KEY</code>
+      </div>
+
+      <div class="setting-row">
+        <div>
+          <strong>PayPal email</strong>
+          <p>
+            The PayPal account you use for your business.
+          </p>
+        </div>
+
+        <code>PAYPAL_EMAIL</code>
+      </div>
+
+      <div class="setting-row">
+        <div>
+          <strong>Support team email</strong>
+          <p>
+            Email address customers can use to contact support.
+          </p>
+        </div>
+
+        <code>SUPPORT_EMAIL</code>
+      </div>
+
+      <div class="settings-note">
+        <strong>Vercel configuration</strong>
+        <p>
+          Add these values in Vercel → Project → Settings →
+          Environment Variables. Never put the Gemini key in GitHub.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
