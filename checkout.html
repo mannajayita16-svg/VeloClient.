@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Checkout | VeloClient</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">V</span>
+    VeloClient
+  </a>
+
+  <a href="pricing.html" class="nav-login">← Back to pricing</a>
+</header>
+
+<main class="checkout-page">
+
+  <div class="checkout-heading">
+    <span class="eyebrow">SECURE CHECKOUT</span>
+    <h1>Complete your purchase</h1>
+    <p>Your VeloClient workspace is ready when you are.</p>
+  </div>
+
+  <section class="checkout-grid">
+
+    <div class="order-card">
+
+      <span class="eyebrow">ORDER SUMMARY</span>
+
+      <h2 id="planTitle">VeloClient Lifetime</h2>
+
+      <div class="order-price">
+        <strong id="orderPrice">$10,000</strong>
+        <span id="orderType">One-time payment</span>
+      </div>
+
+      <div class="discount-box">
+        <strong>90% OFF</strong>
+        <span>Regular price: <s>$100,000</s></span>
+      </div>
+
+      <ul class="check-list">
+        <li>Full VeloClient access</li>
+        <li>AI client audits</li>
+        <li>Unlimited client onboarding</li>
+        <li>Secure account access</li>
+        <li>Priority support</li>
+      </ul>
+
+    </div>
+
+    <div class="payment-card">
+
+      <span class="eyebrow">PAYMENT</span>
+
+      <h2>Choose your payment method</h2>
+
+      <div class="payment-methods">
+        <button class="payment-method active">PayPal</button>
+      </div>
+
+      <div class="paypal-box">
+        <div class="paypal-logo">P</div>
+        <div>
+          <strong>PayPal checkout</strong>
+          <p id="paypalText">
+            Your PayPal payment will be handled by the configured account.
+          </p>
+        </div>
+      </div>
+
+      <a id="paypalButton" href="#" class="btn full">
+        Continue with PayPal →
+      </a>
+
+      <p class="checkout-note">
+        Payment processing must be connected to your PayPal merchant
+        account before this button can charge customers.
+      </p>
+
+      <div class="secure-note">
+        🔒 Secure checkout · SSL encrypted
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
