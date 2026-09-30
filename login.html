@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sign in | VeloClient</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+<div class="auth-shell">
+
+  <a href="index.html" class="brand auth-brand">
+    <span class="brand-mark">V</span>
+    VeloClient
+  </a>
+
+  <div class="auth-card">
+
+    <div class="auth-heading">
+      <span class="eyebrow">WELCOME BACK</span>
+      <h1>Sign in to VeloClient</h1>
+      <p>Access your agency workspace from any device.</p>
+    </div>
+
+    <form id="loginForm">
+
+      <label>Email</label>
+      <input id="email" type="email" placeholder="you@agency.com" required>
+
+      <label>Password</label>
+      <input id="password" type="password" placeholder="••••••••" required>
+
+      <button class="btn full" type="submit">Sign In →</button>
+
+      <p id="message" class="form-message"></p>
+
+    </form>
+
+    <div class="auth-bottom">
+      Don't have an account?
+      <a href="signup.html">Create one</a>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>
