@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Audit | VeloClient</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-page">
+
+<div class="app-layout">
+
+  <aside class="sidebar">
+
+    <a href="dashboard.html" class="brand">
+      <span class="brand-mark">V</span>
+      VeloClient
+    </a>
+
+    <nav class="side-nav">
+      <a href="dashboard.html">◉ Dashboard</a>
+      <a href="clients.html">◌ Clients</a>
+      <a href="clients.html">□ Intake Forms</a>
+      <a class="active" href="audit.html">✦ AI Audits</a>
+      <a href="settings.html">⚙ Settings</a>
+    </nav>
+
+    <div class="side-bottom">
+      <button id="logout" class="logout">Sign out</button>
+    </div>
+
+  </aside>
+
+  <main class="app-main">
+
+    <header class="app-header">
+      <div>
+        <small>GEMINI POWERED</small>
+        <h1>AI Client Audit</h1>
+      </div>
+    </header>
+
+    <section class="audit-layout">
+
+      <div class="panel">
+
+        <div class="panel-heading">
+          <div>
+            <small>INPUT</small>
+            <h2>Client information</h2>
+          </div>
+        </div>
+
+        <form id="auditForm">
+
+          <label>Client</label>
+          <input id="auditClient" placeholder="Acme Creative" required>
+
+          <label>Project</label>
+          <input id="auditProject" placeholder="Website redesign">
+
+          <label>What did the client provide?</label>
+          <textarea id="auditInfo" rows="10" placeholder="Paste the client's onboarding information, assets, goals, requirements, access details, deadlines, brand information, etc."></textarea>
+
+          <button class="btn full" type="submit">
+            ✦ Run Gemini Audit
+          </button>
+
+          <p id="auditMessage" class="form-message"></p>
+
+        </form>
+
+      </div>
+
+      <div class="panel audit-output">
+
+        <div class="panel-heading">
+          <div>
+            <small>AI ANALYSIS</small>
+            <h2>Audit result</h2>
+          </div>
+        </div>
+
+        <div id="auditResult" class="audit-placeholder">
+          <div class="large-orb">✦</div>
+          <h3>Your audit will appear here</h3>
+          <p>
+            Gemini will identify missing information, risks,
+            project concerns and recommended next actions.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
